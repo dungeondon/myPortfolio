@@ -17,7 +17,7 @@ function App() {
         <h1>Connect</h1>
         <h3>Email: <a href="mailto:iamvenkateshkvs@gmail.com">iamvenkateshkvs@gmail.com</a></h3>
         
-        <h4>Call: +91 8686 2345 30</h4>
+        <h4>Call: +91 8686234530</h4>
       </div>
     </>
   )
