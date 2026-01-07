@@ -1,26 +1,22 @@
-import { useState } from 'react'
-import kvsLogo from '/kvs.svg'
-import './App.css'
+import { useState } from "react";
+import kvsLogo from "/kvs.svg";
+import "./App.css";
+import Header from "./components/Header";
+import Home from "./pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={kvsLogo} className="logo" alt="KVS logo" />
-        </a>
-        
-      </div>
-      <div>
-        <h1>Connect</h1>
-        <h3>Email: <a href="mailto:iamvenkateshkvs@gmail.com">iamvenkateshkvs@gmail.com</a></h3>
-        
-        <h4>Call: +91 8686234530</h4>
+        <Header />
+        <main>
+          <Home />
+        </main>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
