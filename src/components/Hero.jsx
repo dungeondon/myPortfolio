@@ -1,14 +1,20 @@
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className="max-w-4xl mx-auto px-4 py-20 text-center">
       {/* Title with badge */}
-      <div className="inline-flex items-center gap-2 px-4 py-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-medium rounded-full mb-6">
-        <div />
+      <motion.div
+        className="bg-linear-to-t from-sky-500 to-indigo-500 inline-flex items-center gap-2 px-4 py-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-medium rounded-full m-6"
+        initial={{ opacity: 0, scale: 0.9, y: 30 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        whileHover={{ scale: 1.05, rotateX: 5 }}
+      >
         UI/UX & Product Designer
-      </div>
+      </motion.div>
 
       {/* Name */}
-      <h1 className="font-inter text-5xl md:text-7xl font-black bg-gradient-to-r from-gray-900 to-black text-transparent bg-clip-text mb-6 leading-tight">
+      <h1 className="font-inter font-bold md:text-6xl text-black bg-clip-text leading-tight">
         Venkatesh Kesanakurthi
       </h1>
 

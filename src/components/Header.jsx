@@ -3,18 +3,26 @@ import kvsLogo from "/kvs.svg";
 
 const Header = () => {
   return (
-    <header className="w-full bg-white px-6 pb-6 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white px-6 mb-6 flex items-center justify-between">
       {/* Logo */}
-      <a href="https://vite.dev" target="_blank">
+      <a href="/">
         <img src={kvsLogo} className="logo" alt="KVS logo" />
       </a>
 
       {/* Navigation Links */}
       <nav className="hidden md:flex space-x-8">
-        <a href="#about" className="text-black hover:text-gray-700">
+        <a
+          href="https://www.behance.net/venkateshkvs"
+          target="_blank"
+          className="text-black hover:text-gray-700"
+        >
           Behance
         </a>
-        <a href="#playground" className="text-black hover:text-gray-700">
+        <a
+          href="https://www.linkedin.com/in/venkatesh-kvs/"
+          target="_blank"
+          className="text-black hover:text-gray-700"
+        >
           Linkedin
         </a>
       </nav>
