@@ -37,7 +37,7 @@ const Hero = () => {
       {ripples.map(({ id, x, y }) => (
         <motion.div
           key={id}
-          className="absolute bg-transparent border border-black rounded-full pointer-events-none"
+          className="absolute bg-linear-to-r from-pink/20 to-purple/30 border border-purple rounded-full pointer-events-none"
           // className="absolute bg-transparent/80 border-2 border-black rounded-full shadow-xl pointer-events-none"
           style={{
             left: `${x}px`,
@@ -64,7 +64,7 @@ const Hero = () => {
       <div className="max-w-4xl space-y-4">
         {/* Badge */}
         <motion.div
-          className="inline-flex items-center border-dashed border-1  gap-2 px-6 py-2 text-sm bg-blur rounded-full "
+          className="inline-flex items-center border-dashed border-1 gap-2 px-6 py-2 text-sm bg-blur rounded-full "
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
@@ -84,7 +84,7 @@ const Hero = () => {
         </motion.h1>
 
         {/* Tagline */}
-        <p className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-700 max-w-2xl mx-auto leading-tight">
+        <p className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-700 max-w-2xl mx-auto mb-6 leading-tight">
           <span className="font-serif italic text-gray-900">Designing</span>
           <span className="font-bold text-gray-900"> with humans</span>
           <span className="font-serif italic text-gray-900">
@@ -94,7 +94,7 @@ const Hero = () => {
         </p>
 
         {/* Description */}
-        <p className="text-xl text-gray-600 max-w-lg mx-auto leading-relaxed">
+        <p className="text-xl text-gray-600 max-w-xl mx-auto leading-relaxed">
           Creative and detail-oriented UI/UX Designer with 4+ years of
           experience crafting intuitive digital experiences across web and
           mobile platforms. Proven ability to translate user needs into elegant
@@ -104,7 +104,7 @@ const Hero = () => {
         {/* CTA Button */}
         <a
           href="mailto:iamvenkateshkvs@gmail.com"
-          className="my-6 bg-gradient-to-br from-blue-500 via-purple-500 to-violet-600 inline-flex items-center gap-2 text-white rounded-full py-3 px-10 font-semibold transition-all hover:translate-y-1"
+          className="my-6 bg-gradient-to-br from-black to-purple inline-flex items-center gap-2 text-white rounded-full py-3 px-10 font-semibold transition-all hover:border-1 border-dashed translate-y-1"
         >
           Available for Full-time
           <svg

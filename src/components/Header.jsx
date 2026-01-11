@@ -14,14 +14,14 @@ const Header = () => {
         <a
           href="https://www.behance.net/venkateshkvs"
           target="_blank"
-          className="text-black hover:text-gray-700"
+          className="text-black hover:text-purple"
         >
-          Behance
+          Portfolio
         </a>
         <a
           href="https://www.linkedin.com/in/venkatesh-kvs/"
           target="_blank"
-          className="text-black hover:text-gray-700"
+          className="text-black hover:text-purple"
         >
           Linkedin
         </a>
@@ -29,8 +29,8 @@ const Header = () => {
 
       {/* Resume Button */}
       <a
-        href="/Venkatesh_Resume.pdf"
-        className="bg-black text-white px-6 py-2 rounded text-sm font-medium hover:bg-gray-800 transition-colors"
+        href="/Venkatesh_Kesanakurthi_Resume_2026.pdf"
+        className="bg-linear-to-br from-pink to-purple text-white px-6 py-2 rounded text-sm font-medium hover:bg-linear-to-r transition-colors"
       >
         Resume
       </a>

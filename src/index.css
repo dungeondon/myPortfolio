@@ -8,3 +8,10 @@
   --font-inter: "Inter", sans-serif;
   --font-instrument: "Instrument Serif", serif;
 }
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-purple: #0024d9;
+  --color-pink: #c400e2;
+}
