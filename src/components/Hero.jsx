@@ -37,7 +37,7 @@ const Hero = () => {
       {ripples.map(({ id, x, y }) => (
         <motion.div
           key={id}
-          className="absolute bg-linear-to-r from-pink/20 to-purple/30 border border-purple rounded-full pointer-events-none"
+          className="absolute bg-linear-to-r from-pink/15 to-purple/25 border border-purple rounded-full pointer-events-none"
           // className="absolute bg-transparent/80 border-2 border-black rounded-full shadow-xl pointer-events-none"
           style={{
             left: `${x}px`,
@@ -54,23 +54,30 @@ const Hero = () => {
           }}
           transition={{
             duration: 1.2,
-            ease: [0.25, 1, 0.35, 0.8],
+            ease: [0.2, 1, 0.35, 0.8],
           }}
           onAnimationComplete={() => removeRipple(id)}
         />
       ))}
 
       {/* Content */}
-      <div className="max-w-4xl space-y-4">
+      <div className="max-w-4xl space-y-4 translate-y-1">
         {/* Badge */}
-        <motion.div
-          className="inline-flex items-center border-dashed border-1 gap-2 px-6 py-2 text-sm bg-blur rounded-full "
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-        >
+        <div className="bg-white/80 inline-flex items-center border-dashed border-1 gap-2 px-2 pl-6 py-1 text-sm rounded-full bg-blur">
           UI/UX & Product Designer
-        </motion.div>
+          <span className="flex flex-row">
+            <img
+              className="absolute w-8 border-2 rounded-full border-white"
+              src="/venkatesh-kvs-pic.png"
+              alt="enkatesh Kesanakurthi Image Small"
+            />
+            <img
+              className="ml-4 w-8 rounded-full"
+              src="/india.svg"
+              alt="India Flag Icon"
+            />
+          </span>
+        </div>
 
         {/* Name */}
         <motion.h1
@@ -84,17 +91,17 @@ const Hero = () => {
         </motion.h1>
 
         {/* Tagline */}
-        <p className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-700 max-w-2xl mx-auto mb-6 leading-tight">
-          <span className="font-serif italic text-gray-900">Designing</span>
-          <span className="font-bold text-gray-900"> with humans</span>
-          <span className="font-serif italic text-gray-900">
+        <p className="text-2xl md:text-3xl lg:text-4xl text-black max-w-2xl mx-auto mb-8 my-4">
+          <span className="font-serif italic ">Designing</span>
+          <span className="font-semibold bg-linear-225 from-purple to-pink bg-clip-text text-transparent">
             {" "}
-            at the centre.
+            with humans at the{" "}
           </span>
+          <span className="font-serif italic "> centre.</span>
         </p>
 
         {/* Description */}
-        <p className="text-xl text-gray-600 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xl text-gray max-w-xl mx-auto leading-relaxed">
           Creative and detail-oriented UI/UX Designer with 4+ years of
           experience crafting intuitive digital experiences across web and
           mobile platforms. Proven ability to translate user needs into elegant
